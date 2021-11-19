@@ -49,7 +49,6 @@ $(document).ready (function() {
       }
       console.log($next)
     } else {
-      // prev pos
       let $prev = $($activeArray[0]).prev();
       if( $prev.length === 0 ){
         $('button.news__slider_arrow.next').removeClass("disabled");
@@ -70,18 +69,3 @@ hamburger.onclick = function(){
   menu.appendChild(sMenu);
   console.log(menu)
 }
-
-// $('div.lang__item').click(function(){
-//   let $sneeky_ul = $('ul.lang__list');
-
-//   $sneeky_ul.fadeToggle();
-// });
-
-// $('ul.lang__list > li').click(function(){
-//   let $sneeky_ul = $('ul.lang__list'),
-//     $self = $(this);
-
-//   $('div.lang__item').html($self.html());
-
-//   $sneeky_ul.fadeToggle();
-// });
